@@ -1,0 +1,4 @@
+name: Ultrabit
+markdown: kramdown
+sass:
+    style: compressed
