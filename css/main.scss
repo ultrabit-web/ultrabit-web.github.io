@@ -6,7 +6,7 @@
 }
 * { border: 0; box-sizing: border-box; font: inherit; margin: 0; padding: 0; vertical-align: baseline; }
 html { text-size-adjust: none; }
-body { background: #562f52 url('ub-bg-562f52.jpg') no-repeat 50% 0; background-size: 100% auto; color: #1a1f24; font: 300 20px/1.8em 'Robot', Helvetica, Arial, sans-serif; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-align: center; }
+body { background: #562f52 url('ub-bg-562f52.jpg') no-repeat 50% 0; background-size: 100% auto; color: #1a1f24; font: 300 16px/1.8em 'Robot', Helvetica, Arial, sans-serif; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-align: center; }
 article, aside, details, header, section { display:block; }
 h1, h2, h3 { font-family: 'Lato', 'Roboto', Helvetica, Arial, sans-serif; }
 h1, h2 { font-size: 36px; font-weight: 700;
@@ -26,7 +26,7 @@ strong { font-weight: 700; }
 em { font-style: italic; }
 
 .main { margin: 0 auto; max-width: 1000px; padding: 180px 20px 20px; }
-.header { background-color: #2d6584; background-color: rgba(0,0,0,.1); color: #fff; padding: 100px 100px 50px 100px; position: relative;
+.header { background-color: #2d6584; background-color: rgba(0,0,0,.1); color: #fff; font-size: 20px; padding: 100px 100px 50px 100px; position: relative;
   &:before { background: transparent url('ub-logo.png') no-repeat 50% 0; background-size: contain; content: ''; display: block; height: 197px; left: 0; position: absolute; right: 0; top: -134px; }
   p { margin-bottom: 0; }
 }
@@ -34,7 +34,7 @@ em { font-style: italic; }
   &:after { clear: both; content: ''; display: table; }
 }
 
-.job { margin: 21px auto 40px; max-width: 830px; padding: 0 60px;
+.job { margin: 40px auto; max-width: 830px; padding: 0 60px;
   &:after { border-bottom: 1px solid #936868; content: ''; display: block; margin: 60px auto 0; width: 170px; }
   &:last-child:after { display: none; }
   ol, ul { margin: 0 auto 32px; max-width: 560px; padding-left: 24px; text-align: left; }
