@@ -26,12 +26,20 @@ strong { font-weight: 700; }
 em { font-style: italic; }
 
 .main { margin: 0 auto; max-width: 1000px; padding: 180px 20px 20px; }
-.header { background-color: #2d6584; background-color: rgba(0,0,0,.1); color: #fff; font-size: 20px; padding: 100px 100px 50px 100px; position: relative;
+.header { background-color: #2d6584; background-color: rgba(0,0,0,.1); color: #fff; font-size: 20px; padding: 100px 0 30px; position: relative;
   &:before { background: transparent url('ub-logo.png') no-repeat 50% 0; background-size: contain; content: ''; display: block; height: 197px; left: 0; position: absolute; right: 0; top: -134px; }
-  p { margin-bottom: 0; }
+  p { margin: 0 100px; }
 }
 .content { background-color: #dbd1d9; background-color: rgba(255,255,255,.78); margin:  0 auto 20px auto; padding: 44px 20px 20px;
   &:after { clear: both; content: ''; display: table; }
+}
+
+.games { margin-top: 32px;
+  &--list { overflow: hidden; margin: 0 auto; max-width: 814px; padding: 0 20px; text-align: center;
+    &--item { display: block; float: left; padding: 0 3px; width: 50%; }
+    &--link { display: block; }
+    &--img { display: block; height: auto; width: 100%; }
+  }
 }
 
 .job { margin: 40px auto; max-width: 830px; padding: 0 60px;
@@ -55,7 +63,7 @@ em { font-style: italic; }
 }
 
 @media (max-width: 680px) {
-  .header { padding-left: 40px; padding-right: 40px; }
+  .header p { margin-left: 40px; margin-right: 40px; }
 }
 
 @media (max-width: 600px) {
@@ -66,8 +74,12 @@ em { font-style: italic; }
   body { font-size: 16px; }
   h1, h2 { font-size: 30px; }
   .main { padding-top: 120px; }
-  .header { padding: 70px 35px 35px 35px;
+  .header { padding: 70px 0 20px;
     &:before { height: 120px; top: -82px; }
+    p { margin-left: 35px; margin-right: 35px; }
+  }
+  .games { margin-top: 12px;
+    &--list--item { float: none; padding: 3px 0; width: 100%; }
   }
   .job { padding: 0;
     &--intro { padding: 16px 20px; }
