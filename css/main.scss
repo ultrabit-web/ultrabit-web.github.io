@@ -6,7 +6,7 @@
 }
 * { border: 0; box-sizing: border-box; font: inherit; margin: 0; padding: 0; vertical-align: baseline; }
 html { text-size-adjust: none; }
-body { background: #562f52 url('ub-bg-562f52.jpg') no-repeat 50% 0; background-size: 100% auto; color: #1a1f24; font: 300 16px/1.8em 'Robot', Helvetica, Arial, sans-serif; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-align: center; }
+body { background: #562f52 url('/imgs/ub-bg-562f52.jpg') no-repeat 50% 0; background-size: 100% auto; color: #1a1f24; font: 300 16px/1.8em 'Robot', Helvetica, Arial, sans-serif; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-align: center; }
 article, aside, details, header, section { display:block; }
 h1, h2, h3 { font-family: 'Lato', 'Roboto', Helvetica, Arial, sans-serif; }
 h1, h2 { font-size: 36px; font-weight: 700;
@@ -25,9 +25,9 @@ a { color: #087ca5; cursor: pointer;
 strong { font-weight: 700; }
 em { font-style: italic; }
 
-.main { margin: 0 auto; max-width: 1000px; padding: 180px 20px 20px; }
+.main { margin: 0 auto; max-width: 1080px; padding: 180px 60px 20px; }
 .header { background-color: #2d6584; background-color: rgba(0,0,0,.1); color: #fff; font-size: 20px; padding: 100px 0 30px; position: relative;
-  &:before { background: transparent url('ub-logo.png') no-repeat 50% 0; background-size: contain; content: ''; display: block; height: 197px; left: 0; position: absolute; right: 0; top: -134px; }
+  &:before { background: transparent url('/imgs/ub-logo.png') no-repeat 50% 0; background-size: contain; content: ''; display: block; height: 197px; left: 0; position: absolute; right: 0; top: -134px; }
   p { margin: 0 100px; }
 }
 .content { background-color: #dbd1d9; background-color: rgba(255,255,255,.78); margin:  0 auto 20px auto; padding: 44px 20px 20px;
@@ -35,8 +35,11 @@ em { font-style: italic; }
 }
 
 .games { margin-top: 32px;
-  &--list { overflow: hidden; margin: 0 auto; max-width: 814px; padding: 0 20px; text-align: center;
-    &--item { display: block; float: left; padding: 0 3px; width: 50%; }
+  &--list { font-size: 0; margin: 0; padding: 0 20px; text-align: center;
+    &--item { display: inline-block; padding: 0 3px; vertical-align: bottom; width: 33.333%;
+      &:nth-child(1), &:nth-child(3) { width: 31.5%; }
+      &:nth-child(2) { width: 37%; }
+    }
     &--link { display: block; }
     &--img { display: block; height: auto; width: 100%; }
   }
@@ -57,6 +60,14 @@ em { font-style: italic; }
 
 @media (max-width: 768px) {
   body { font-size: 18px; }
+  .main { padding-left: 20px; padding-right: 20px; }
+  .games { margin-top: 12px;
+    &--list { margin-left: 0; margin-right: 0;
+      &--item { display: block; padding: 3px 0; width: 100%;
+        &:nth-child(1n+1) { width: 100%; }
+      }
+    }
+  }
   .job {
     &--intro { padding: 36px 40px; }
   }
@@ -77,9 +88,6 @@ em { font-style: italic; }
   .header { padding: 70px 0 20px;
     &:before { height: 120px; top: -82px; }
     p { margin-left: 35px; margin-right: 35px; }
-  }
-  .games { margin-top: 12px;
-    &--list--item { float: none; padding: 3px 0; width: 100%; }
   }
   .job { padding: 0;
     &--intro { padding: 16px 20px; }
