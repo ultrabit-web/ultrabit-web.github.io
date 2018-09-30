@@ -26,7 +26,7 @@ strong { font-weight: 700; }
 em { font-style: italic; }
 
 .main { margin: 0 auto; max-width: 1080px; padding: 180px 60px 20px; }
-.header { background-color: #2d6584; background-color: rgba(0,0,0,.1); color: #fff; font-size: 20px; padding: 100px 0 30px; position: relative; text-align: center
+.header { background-color: #2d6584; background-color: rgba(0,0,0,.1); color: #fff; font-size: 20px; padding: 100px 0 30px; position: relative; text-align: center; 
   &:before { background: transparent url('/imgs/ub-logo.png') no-repeat 50% 0; background-size: contain; content: ''; display: block; height: 197px; left: 0; position: absolute; right: 0; top: -134px; }
   p { font-size: 20px; line-height: 32px; margin: 0 100px; }
 }
