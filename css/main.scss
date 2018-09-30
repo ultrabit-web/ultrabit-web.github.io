@@ -61,9 +61,8 @@ em { font-style: italic; }
   .main { padding-left: 20px; padding-right: 20px; }
   .games { margin-top: 12px;
     &--list { margin-left: 0; margin-right: 0;
-      &--item { display: block; padding: 3px 0; width: 100%;
-        &:nth-child(1n+1) { width: 100%; }
-      }
+      &--cover { padding: 10px 0 3px; }
+      &--item { display: block; padding: 3px 0; width: 100%; }
     }
   }
   .job {
@@ -82,6 +81,7 @@ em { font-style: italic; }
 @media (max-width: 560px) {
   body { font-size: 16px; }
   h1, h2 { font-size: 30px; }
+  p { font-size: 16px; line-height: 24px; }
   .main { padding-top: 120px; }
   .header { padding: 70px 0 20px;
     &:before { height: 120px; top: -82px; }
