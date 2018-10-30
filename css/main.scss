@@ -39,8 +39,8 @@ em { font-style: italic; }
     &--cover { padding: 0 30px 15px; }
     &--item { display: inline-block; padding: 0 3px 6px 0; vertical-align: bottom; width: 50%; border-radius: 2px; }
     &--link { display: block; }
-    &--img { display: block; height: auto; width: 100%; border: 1px solid #333; transition: opacity .25s ease-out; opacity: 0.85;
-      &:hover { opacity: 1; }
+    &--img { display: block; height: auto; width: 100%; border: 1px solid #333; transition: all .2s ease-out; opacity: 0.85;
+      &:hover { position:relative; opacity: 1; transform: scale(1.015); box-shadow: 0 0 2px 1px #186ebf; z-index: 5; }
     }
   }
 }
